@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans:
-    "Heebo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-sans: "Heebo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;
@@ -14,6 +13,15 @@
   --color-brand-700: #1d4ed8;
   --color-brand-800: #1e40af;
   --color-brand-900: #1e3a8a;
+
+  --color-electric-50: #fffbeb;
+  --color-electric-100: #fef3c7;
+  --color-electric-200: #fde68a;
+  --color-electric-300: #fcd34d;
+  --color-electric-400: #fbbf24;
+  --color-electric-500: #f59e0b;
+  --color-electric-600: #d97706;
+  --color-electric-700: #b45309;
 }
 
 html {
@@ -22,6 +30,11 @@ html {
 
 body {
   background-color: #f8fafc;
+}
+
+.circuit-pattern {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 18px 18px;
 }
 
 .line-clamp-1 {

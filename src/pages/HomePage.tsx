@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Zap } from "lucide-react";
 import { useCatalog } from "@/state/CatalogContext";
 import { CategoryIllustration } from "@/components/product/CategoryIllustration";
 import { ProductGrid } from "@/components/product/ProductGrid";
@@ -12,21 +12,31 @@ export function HomePage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <section className="overflow-hidden rounded-2xl bg-gradient-to-l from-brand-700 to-brand-500 px-6 py-12 text-white sm:px-10">
-        <h1 className="max-w-xl text-3xl font-extrabold sm:text-4xl">
-          טכנוזון חשמל אונליין — כל האלקטרוניקה והחשמל במקום אחד
-        </h1>
-        <p className="mt-3 max-w-lg text-white/90">
-          סלולר, מחשבים, טלוויזיות, מוצרי חשמל קטנים וגדולים, אודיו ואוזניות — במחירים משתלמים
-          ובמגוון רחב.
-        </p>
-        <Link
-          to={`/category/${categories[0]?.slug ?? ""}`}
-          className="mt-6 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 hover:bg-white/90"
-        >
-          לגלות מוצרים
-          <ArrowLeft className="h-4 w-4" />
-        </Link>
+      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-l from-brand-800 to-brand-600 px-6 py-12 text-white sm:px-10">
+        <div
+          className="circuit-pattern pointer-events-none absolute inset-0 text-white/10"
+          aria-hidden
+        />
+        <div className="relative">
+          <span className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-electric-400/20 px-3 py-1 text-xs font-bold text-electric-300 ring-1 ring-electric-400/40">
+            <Zap className="h-3.5 w-3.5" fill="currentColor" />
+            מחירים בהספק מלא
+          </span>
+          <h1 className="max-w-xl text-3xl font-extrabold sm:text-4xl">
+            טכנוזון חשמל אונליין — כל האלקטרוניקה והחשמל במקום אחד
+          </h1>
+          <p className="mt-3 max-w-lg text-white/90">
+            סלולר, מחשבים, טלוויזיות, מוצרי חשמל קטנים וגדולים, אודיו ואוזניות — במחירים משתלמים
+            ובמגוון רחב.
+          </p>
+          <Link
+            to={`/category/${categories[0]?.slug ?? ""}`}
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-electric-400 px-5 py-2.5 text-sm font-bold text-brand-900 hover:bg-electric-300"
+          >
+            לגלות מוצרים
+            <ArrowLeft className="h-4 w-4" />
+          </Link>
+        </div>
       </section>
 
       <section>
