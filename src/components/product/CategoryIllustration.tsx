@@ -38,12 +38,16 @@ export function CategoryIllustration({
   return (
     <div
       className={cn(
-        "flex items-center justify-center rounded-xl bg-gradient-to-br",
+        "relative flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br",
         gradient,
         className,
       )}
     >
-      <Icon className={cn("text-white/90", iconClassName)} strokeWidth={1.5} aria-hidden />
+      <div
+        className="circuit-pattern pointer-events-none absolute inset-0 text-white/10"
+        aria-hidden
+      />
+      <Icon className={cn("relative text-white/90", iconClassName)} strokeWidth={1.5} aria-hidden />
     </div>
   );
 }

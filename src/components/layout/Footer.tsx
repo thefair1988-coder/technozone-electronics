@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-600 to-brand-800 text-electric-400 ring-2 ring-electric-400/40">
               <Zap className="h-4 w-4" fill="currentColor" />
             </span>
             <span className="text-base font-extrabold text-slate-900">טכנוזון חשמל אונליין</span>
