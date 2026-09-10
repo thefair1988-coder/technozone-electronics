@@ -61,9 +61,11 @@ export function AdminLoginPage() {
             </Button>
           </form>
 
-          <p className="flex items-center gap-1 text-xs text-slate-400">
-            <Zap className="h-3 w-3" /> ברירת מחדל: admin / admin123 (ניתן להגדיר משתני סביבה)
-          </p>
+          {import.meta.env.DEV ? (
+            <p className="flex items-center gap-1 text-xs text-slate-400">
+              <Zap className="h-3 w-3" /> ברירת מחדל (dev בלבד): admin / admin123
+            </p>
+          ) : null}
         </CardContent>
       </Card>
     </div>
