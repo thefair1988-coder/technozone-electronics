@@ -1,0 +1,60 @@
+import type { Category } from "@/types/product";
+
+export const categories: Category[] = [
+  {
+    id: "cat-cellular",
+    slug: "cellular-tablets",
+    name: "סלולר וטאבלטים",
+    description: "סמארטפונים, טאבלטים ואביזרים נלווים מהמותגים המובילים",
+    icon: "smartphone",
+    gradient: "from-blue-500 to-indigo-600",
+  },
+  {
+    id: "cat-computers",
+    slug: "computers-laptops",
+    name: "מחשבים ולפטופים",
+    description: "מחשבים ניידים, מחשבי גיימינג ואביזרי מחשוב",
+    icon: "laptop",
+    gradient: "from-slate-600 to-blue-700",
+  },
+  {
+    id: "cat-tv",
+    slug: "tv-monitors",
+    name: "טלוויזיות ומסכים",
+    description: "טלוויזיות חכמות, מסכי מחשב ומקרנים",
+    icon: "tv",
+    gradient: "from-violet-500 to-purple-700",
+  },
+  {
+    id: "cat-kitchen",
+    slug: "small-kitchen-appliances",
+    name: "מוצרי חשמל קטנים למטבח",
+    description: "בלנדרים, מיקסרים, קומקומים ומכשירי מטבח יומיומיים",
+    icon: "chef-hat",
+    gradient: "from-amber-500 to-orange-600",
+  },
+  {
+    id: "cat-audio",
+    slug: "audio-headphones",
+    name: "אודיו ואוזניות",
+    description: "אוזניות אלחוטיות, רמקולים ומערכות סאונד ביתיות",
+    icon: "headphones",
+    gradient: "from-rose-500 to-pink-600",
+  },
+  {
+    id: "cat-large-appliances",
+    slug: "large-home-appliances",
+    name: "מוצרי חשמל גדולים לבית",
+    description: "מקררים, מכונות כביסה, מדיחי כלים ומזגנים",
+    icon: "washing-machine",
+    gradient: "from-teal-500 to-cyan-700",
+  },
+  {
+    id: "cat-accessories",
+    slug: "accessories",
+    name: "אביזרים וציוד נלווה",
+    description: "כבלים, מטענים, סוללות ניידות ואביזרים חשמליים נוספים",
+    icon: "plug",
+    gradient: "from-emerald-500 to-green-700",
+  },
+];
