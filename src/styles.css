@@ -37,6 +37,41 @@ body {
   background-size: 18px 18px;
 }
 
+@keyframes power-flash {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-power-flash {
+  animation: power-flash 0.7s ease-out both;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.55s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-power-flash,
+  .animate-fade-up {
+    animation: none;
+  }
+}
+
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
